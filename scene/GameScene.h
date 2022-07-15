@@ -27,6 +27,8 @@ class GameScene {
 	ViewProjection viewProjection_;
 	//デバッグカメラ
 	DebugCamera* debugCamera_ = nullptr;
+	//度からラジアンへ変換
+	float DtoR(float d) { return MathUtility::PI / (180 / d); }
 	/// <summary>
 	/// コンストクラタ
 	/// </summary>
